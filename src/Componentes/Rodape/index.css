@@ -1,0 +1,11 @@
+.icone-redes {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    line-height: 50px;
+    width: 50px;
+}
+
+.icone-redes:hover {
+    color: #f1ba1a;
+}

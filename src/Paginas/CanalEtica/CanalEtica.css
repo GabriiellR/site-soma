@@ -1,0 +1,14 @@
+.parallax-etica {
+
+background-image: url('../../Imagens/CanalEtica/parallax_etica.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+min-height: 120vh;
+
+display: flex;
+align-items: center;
+
+
+}

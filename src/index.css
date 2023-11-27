@@ -1,0 +1,32 @@
+.yellow-soma {
+  background-color: #f1ba1a !important;
+}
+
+.text-yellow-soma {
+  color: #f1ba1a !important;
+}
+
+
+#particles {
+  position: fixed !important;
+  z-index: -500;
+  width: 100%;
+}
+
+span {
+  color: #6D6E70 !important
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #757575;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1ba1a;
+  border-radius: 10px;
+}

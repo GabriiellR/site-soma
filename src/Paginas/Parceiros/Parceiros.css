@@ -1,0 +1,17 @@
+.paralax-parceiros {
+    background-image: url('../../Imagens/Perceiros/parceiros.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 120vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paralax-parceiros .container{
+    min-height: 107vh;
+}
