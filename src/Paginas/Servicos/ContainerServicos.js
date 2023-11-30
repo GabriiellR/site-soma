@@ -33,7 +33,7 @@ const ContainerServicos = (props) => {
                 <div className="col-sm-12 col-md-12 col-lg-6">
                     <Swiper
                         modules={[Navigation, Thumbs]}
-                        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : alert('swiper com problema')}
+                        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
                         style={{ '--swiper-navigation-color': '#f1ba1a', '--swiper-pagination-color': '#f1ba1a' }}
                         spaceBetween={10}
                         navigation={true}
