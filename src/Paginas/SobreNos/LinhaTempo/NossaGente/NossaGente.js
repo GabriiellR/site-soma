@@ -36,16 +36,17 @@ const NossaGente = () => {
                     <div className='col-sm-12 col-md-12 col-lg-12'>
                         <figure className='text-end'>
                             <blockquote class="blockquote">
-                                <span className='fw-semibold'>"Sucesso é encontrar aquilo que se tenciona ser e depois fazer o que é necessário para isso."</span>
+                                <span className='fw-bold fs-3'>"Sucesso é encontrar aquilo que se tenciona ser e depois fazer o que é necessário para isso."</span>
                             </blockquote>
-                            <figcaption class="blockquote-footer"> <cite title="Source Title">EPICTETUS</cite></figcaption>
+                            <figcaption class="blockquote-footer fs-4"> <cite title="Source Title">EPICTETUS</cite></figcaption>
                         </figure>
                     </div>
                 </div>
 
-                <div className='row'>
+                <div className='row mt-3'>
                     <div className='col-sm-12 col-md-12 col-lg-12'>
-                        <Slide conteudo={[<Depoimento imagem={imagemAdilio} nome="Adílio Soares" cargo="Mecânico" depoimento="“A Soma vem se aperfeiçoando cada dia mais para atender seus clientes e funcionários. Tem uma estrutura física espetacular, com profissionais qualificados, e se preocupa com a segurança de seus funcionários. Gosto muito de trabalhar na Soma, vou além, tenho orgulho de fazer parte da família Soma.”" />,
+                        <Slide conteudo={[
+                        <Depoimento imagem={imagemAdilio} nome="Adílio Soares" cargo="Mecânico" depoimento="“A Soma vem se aperfeiçoando cada dia mais para atender seus clientes e funcionários. Tem uma estrutura física espetacular, com profissionais qualificados, e se preocupa com a segurança de seus funcionários. Gosto muito de trabalhar na Soma, vou além, tenho orgulho de fazer parte da família Soma.”" />,
                         <Depoimento imagem={imagemDouglas} nome="Douglas Silva" cargo="Assistente de operações" depoimento="“Procuro atuar de forma criativa e inovadora, aplicando os conhecimentos que estou adquirindo no meu curso de logística na SOMA. Em contra partida espero reconhecimento e crescimento profissional, almejo uma oportunidade na área de manutenção. O meu sucesso depende do sucesso da Soma no mercado. Quero somar e fazer a diferenças.”" />,
                         <Depoimento imagem={imagemRondecarlos} nome="Rondecarlos Francisco" cargo="Coordenador de Projetos" depoimento="“Eu me sinto muito orgulhoso em fazer parte da família Soma. Após minha primeira experiência profissional no ramo de logística, pensei que seria difícil me habituar tão rapidamente a um novo ambiente de trabalho, mas tive e tenho todo o apoio da empresa, o que é essencial para o desenvolvimento de minhas atividades profissionais e para o meu crescimento pessoal.”" />,
                         <Depoimento imagem={imagemRosemeire} nome="Rondecarlos Francisco" cargo="Gerente de unidade" depoimento="“Trabalho na empresa Soma há quase 13 anos e tenho orgulho em fazer parte desta família. Eu me lembro quando comecei a trabalhar na empresa, momentos de incertezas e medo por assumir um novo desafio, porém, aqui fui abraçada e isto tornou mais fácil a minha trajetória. Sou feliz e grata por tudo que conquistei nessa jornada e continuar fazer parte desta família só me faz sentir mais forte!”" />,

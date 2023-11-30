@@ -6,7 +6,7 @@ const CardPrincipal = (props) => {
     AOS.init();
 
     return <>
-        <div class="container bg-light px-5 pb-5" data-aos="fade-right" data-aos-duration="2000">
+        <div class="container bg-light px-5 pb-5" data-aos="fade-right" data-aos-duration="1000">
             <div class="row gy-4 mt-5">
                 <div class="col-sm-12 col-md-12 col-lg-12">
 
@@ -19,6 +19,7 @@ const CardPrincipal = (props) => {
                             </div>
                         </div>
                     }
+
                     {props.componente}
                 </div>
             </div>

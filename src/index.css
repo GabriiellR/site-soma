@@ -6,7 +6,6 @@
   color: #f1ba1a !important;
 }
 
-
 #particles {
   position: fixed !important;
   z-index: -500;
@@ -20,10 +19,6 @@ span {
 ::-webkit-scrollbar {
   width: 5px;
   height: 3px;
-}
-
-::-webkit-scrollbar-track {
-  background: #757575;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -41,4 +36,12 @@ span {
   border-radius: 60px;
   transform-origin: 0%;
   z-index: 9999;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.swiper-slide{
+  background-color:  transparent !important;
 }

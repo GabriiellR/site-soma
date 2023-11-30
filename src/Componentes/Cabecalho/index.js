@@ -10,9 +10,8 @@ const Cabecalho = () => {
     const pagina = useLocation();
     const { scrollYProgress } = useScroll();
 
-
     return <>
-        <nav class="navbar navbar-expand-lg d-flex gap-3 p-4 sticky-top bg-light">
+        <nav class="navbar navbar-expand-lg d-flex gap-3 p-4 sticky-top bg-white">
             <div class="container-fluid">
 
                 <img src={logoMenu} />
@@ -39,10 +38,10 @@ const Cabecalho = () => {
                             <Link to="contato" className={`fs-4 mx-2 hover nav-link text-decoration-none text-black fw-normal ${pagina.pathname == '/contato' ? 'text-yellow-soma fw-bold' : ''}`}>Contato</Link>
                         </li>
                         <li class="nav-item ">
-                            <Link to="etica" className={`fs-4 mx-2 nav-link hover text-decoration-none text-black fw-normal ${pagina.pathname == '/etica' ? 'text-yellow-soma fw-bold' : ''}`}>Canal de ética</Link>
+                            <Link to="https://somalogistica.solides.jobs/" className={`fs-4 mx-2 hover nav-link text-decoration-none text-black fw-normal ${pagina.pathname == '/trabalheconosco' ? 'text-yellow-soma fw-bold' : ''}`}>Trabalhe conosco</Link>
                         </li>
                         <li class="nav-item ">
-                            <Link to="https://somalogistica.solides.jobs/" className={`fs-4 mx-2 hover nav-link text-decoration-none text-black fw-normal ${pagina.pathname == '/trabalheconosco' ? 'text-yellow-soma fw-bold' : ''}`}>Trabalhe conosco</Link>
+                            <Link to="etica" className={`fs-4 mx-2 nav-link hover text-decoration-none text-black fw-normal ${pagina.pathname == '/etica' ? 'text-yellow-soma fw-bold' : ''}`}>Canal de ética</Link>
                         </li>
                     </ul>
                 </div>
