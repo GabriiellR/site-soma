@@ -63,11 +63,13 @@ import CardPrincipal from "../../Componentes/Card/CardPrincipal";
 
 import diferenciais from '../../Imagens/Servicos/Diferenciais/diferenciais.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Servicos = () => {
 
+    AOS.init();
     return (
-
         <>
             <Particles />
             <Slide conteudo={[<img src={imagemInicio1} className="img-fluid w-100" />,
@@ -128,7 +130,7 @@ const Servicos = () => {
                             texto="Locamos caminhões, máquinas e equipamentos pesados que vão garantir à sua operação tecnologia de ponta, alta produtividade, ampla variedade de aplicação e excelente desempenho.Temos extenso portfólio de maquinário, incluindo carregadeiras, escavadeiras, motoniveladoras, rolos compactadores, tratores de esteira, caminhões-pipa e comboio, entre outros. São inúmeras as vantagens de se locar um equipamento, entre elas, economia com estoque, redução de tempo improdutivo, custo zero de manutenção, dedução de IR, entre outros."
                         />
 
-                        <CardPrincipal titulo="NOSSOS DIFERENCIAIS" componente={<img src={diferenciais} className="img-fluid mt-5" />} />
+                        <CardPrincipal titulo="NOSSOS DIFERENCIAIS" componente={<div className="d-flex justify-content-center" data-aos="fade-right" data-aos-duration="2000"><img src={diferenciais} className="img-fluid mt-5 " width="80%" /></div>} />
                     </div>
                 </div>
             </div>

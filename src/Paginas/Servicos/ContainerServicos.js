@@ -33,7 +33,7 @@ const ContainerServicos = (props) => {
                 <div className="col-sm-12 col-md-12 col-lg-6">
                     <Swiper
                         modules={[Navigation, Thumbs]}
-                        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : undefined}
+                        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : alert('swiper com problema')}
                         style={{ '--swiper-navigation-color': '#f1ba1a', '--swiper-pagination-color': '#f1ba1a' }}
                         spaceBetween={10}
                         navigation={true}
@@ -54,11 +54,11 @@ const ContainerServicos = (props) => {
             <div className='row'>
                 <div className='cols-sm-12 col-md-12 col-lg-12'>
                     <Swiper
+                        onSwiper={setThumbsSwiper}
+                        style={{ '--swiper-navigation-color': '#f1ba1a', '--swiper-pagination-color': '#f1ba1a' }}
                         modules={[Navigation, Thumbs]}
                         watchSlidesProgress
                         navigation={true}
-                        style={{ '--swiper-navigation-color': '#f1ba1a', '--swiper-pagination-color': '#f1ba1a' }}
-                        onSwiper={setThumbsSwiper}
                         spaceBetween={15}
                         slidesPerView={6}
                         className="mySwiper">
