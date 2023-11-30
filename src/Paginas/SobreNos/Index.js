@@ -13,12 +13,11 @@ import Premios from './Premios/Premios.js'
 import CardPrincipal from "../../Componentes/Card/CardPrincipal.js";
 
 
-
 const SobreNosIndex = () => {
-    return <>
 
+    return <>
         <ParticlesSobreNos />
-        <CardPrincipal titulo="SOBRE NÓS" componente={<SobreNos />} />
+        <CardPrincipal titulo="SOBRE NÓS" componente={<SobreNos />}  />
         <LinhaTempo />
         <CardPrincipal titulo="NOSSOS VALORES" componente={<Valores />} />
         <CardPrincipal titulo="CORPO DIRETIVO" componente={<CorpoDiretivo />} />

@@ -2,14 +2,20 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Thumbs } from 'swiper/modules';
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 import './SlideServicos.css'
 
 const ContainerServicos = (props) => {
 
+    AOS.init();
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return <>
-        <div className='bg-light mt-5'>
+        <div className='bg-light mt-5' data-aos="fade-left" data-aos-duration="2000">
 
             {props.tituloSegmento &&
 
@@ -65,7 +71,7 @@ const ContainerServicos = (props) => {
                     </Swiper>
                 </div>
             </div>
-            
+
         </div>
     </>;
 };

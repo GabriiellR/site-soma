@@ -15,13 +15,19 @@ import doisMilDezesseis from '../../../Imagens/Sobrenos/LinhaTempo/2016.jpg';
 import doisMilDezoito from '../../../Imagens/Sobrenos/LinhaTempo/2018.jpg';
 import doisMilDezenove from '../../../Imagens/Sobrenos/LinhaTempo/2019.jpg';
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 const LinhaTempo = () => {
 
+AOS.init();
+
     return <>
-        <div className="col-sm-12 col-md-12 col-lg-12 mt-5">
+        <div className="col-sm-12 col-md-12 col-lg-12 mt-5" data-aos="fade-left" data-aos-duration="2000">
             <div className="container-fluid bg-light">
                 <Swiper
-                    direction={'horizontal'}
+                    direction={'vertical'}
                     observer={true}
                     observeSlideChildren={true}
                     loop={false}
@@ -37,11 +43,6 @@ const LinhaTempo = () => {
                         }
                     }}
 
-                    breakpoints={{
-                        768: {
-                            direction: 'vertical'
-                        },
-                    }}
                     modules={[Mousewheel, Pagination]}
                     className="timeline"
                 >

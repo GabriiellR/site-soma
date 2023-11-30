@@ -1,6 +1,6 @@
 import Transicao from "../../Componentes/Transicoes/Transicao";
 import Slide from '../../Componentes/Slide/Slide';
-import SlideServicos from "./ContainerServicos";
+import ContainerServicos from "./ContainerServicos";
 import Particles from '../../Componentes/Particles/Particles'
 
 import imagemInicio1 from '../../Imagens/Servicos/Inicio/01.jpg';
@@ -40,7 +40,6 @@ import caminhoespipa4 from '../../Imagens/Servicos/Mineracao/caminhoespipa/03.jp
 import caminhoespipa5 from '../../Imagens/Servicos/Mineracao/caminhoespipa/04.jpg'
 import caminhoespipa6 from '../../Imagens/Servicos/Mineracao/caminhoespipa/05.jpg'
 import caminhoespipa7 from '../../Imagens/Servicos/Mineracao/caminhoespipa/06.jpg'
-import caminhoespipa8 from '../../Imagens/Servicos/Mineracao/caminhoespipa/07.jpg'
 
 import escavacoes1 from '../../Imagens/Servicos/Mineracao/escavacoes/00.jpg'
 import escavacoes2 from '../../Imagens/Servicos/Mineracao/escavacoes/01.jpg'
@@ -78,19 +77,19 @@ const Servicos = () => {
             <div className="container">
                 <div className="row gy-2">
                     <div className="col-sm-12 col-md-12 col-lg-12">
-                        <SlideServicos
+                        <ContainerServicos
                             titulo="CADEIA DE SUPRIMENTOS"
                             imagens={[cadeiaSuprimentos1, cadeiaSuprimentos2, cadeiaSuprimentos3, cadeiaSuprimentos4, cadeiaSuprimentos5, cadeiaSuprimentos6]}
                             texto="Oferecemos soluções personalizadas, atendendo toda a cadeia de suprimentos - da base ao produto final - com serviços customizados e projetos feitos sob medida para atender às necessidades dos clientes, integrando etapas e otimizando custos. Realizamos a gestão do fluxo produtivo, bem como abastecemos e distribuímos operacionalmente matérias-primas e insumos até a entrega ao ponto de consumo, integrando todas as etapas do processo produtivo.Temos infraestrutura própria e capacidade para armazenagem e movimentação de todos os tipos de cargas."
                         />
 
-                        <SlideServicos
+                        <ContainerServicos
                             titulo="TRANSPORTE RODOVIÁRIO DE CARGAS"
                             imagens={[transporteRodoviario1, transporteRodoviario2, transporteRodoviario3, transporteRodoviario4, transporteRodoviario5, transporteRodoviario6]}
                             texto="Perfeito para clientes com oscilação de volume. Transportamos matéria-prima e produtos acabados em todo território nacional e cone-sul, de “ponto a ponto”, cargas nacionalizadas ou cargas sob regime de trânsito aduaneiro, promovendo inclusive o desembaraço sobre rodas.Analisamos todas as variáveis para adequar nossos serviços aos anseios dos clientes e, por isso, trabalhamos com as mais diversas práticas logísticas, a exemplo de cross docking, venda direta, transferência, logística reversa, transit point, inbound, outbound."
                         />
 
-                        <SlideServicos
+                        <ContainerServicos
                             tituloSegmento="MINERAÇÃO"
                             textoSegmento="Soluções especializadas para o segmento minerário, com serviços de exploração mineral, escavação e estruturação, bem como infraestrutura, terraplanagem, movimentação interna, barragens e diques, construção civil, manutenção de vias, limpeza de dutos, transporte de minério, escória, estéril, perfuração, desmonte, logística especializada com caminhões comboio e pipas, entre outros."
                             titulo="MOVIMENTAÇÃO INTERNA"
@@ -99,31 +98,31 @@ const Servicos = () => {
                         />
 
 
-                        <SlideServicos
+                        <ContainerServicos
                             titulo="TERRAPLANAGEM E INFRAESTRUTURA"
                             imagens={[terraplanagem01, terraplanagem02, terraplanagem03, terraplanagem04]}
                             texto="A Soma presta serviços de terraplanagem visando a conformação de relevos para implantação de obras de engenharia, bem como serviços de infraestrutura de mina objetivando que operações produtivas performem ciclos seguros, controlados e previsíveis. Atuamos com serviços de base como abertura e adequações de depósitos, acessos e aterros, nivelamento de áreas, confecção de diques, limpeza de sump, manutenção de acessos, instalação e manutenção de drenagens, britagem, conformação de pilhas de estéril, retaludamentos, limpeza industrial, entre outros."
                         />
 
-                        <SlideServicos
+                        <ContainerServicos
                             titulo="UMECTAÇÃO E MANUTENÇÃO DE VIAS"
                             imagens={[caminhoespipa1, caminhoespipa2, caminhoespipa3, caminhoespipa4, caminhoespipa5, caminhoespipa6, caminhoespipa7]}
                             texto="Nossa empresa atua com umectação de vias, transporte e reposição de água potável em operação de mina. A frota de caminhões-pipa da Soma é grande e diferenciada, em termos de capacidade e tecnologia.Em mineração, a atuação deste equipamento é vital ao negócio, seja para preservar a saúde dos trabalhadores e da comunidade, seja para resfriar o chão quente diminuindo o aquecimento dos pneus ou mesmo para não encharcar as pistas e torná-las escorregadias, o que aumentaria o risco de acidente ou atrapalharia o fluxo logístico."
                         />
 
-                        <SlideServicos
+                        <ContainerServicos
                             titulo="ESCAVAÇÕES"
                             imagens={[escavacoes1, escavacoes2, escavacoes3, escavacoes4, escavacoes5, escavacoes6, escavacoes7]}
                             texto="Dentre os serviços que a empresa executa - projetos estruturais de exploração mineral, confecção de bacias, entre outros - destaca-se a importância de uma base bem trabalhada seja na supressão vegetal ou na movimentação de terra para cortes e estruturação, aterro, reaterro, com especial atenção para as escavações precisas, rebaixamentos, compactação e nivelamento de terrenos."
                         />
 
-                        <SlideServicos
+                        <ContainerServicos
                             titulo="TRANSPORTE DE QUÍMICOS E PERIGOSOS"
                             imagens={[cargasPerigosas1, cargasPerigosas2, cargasPerigosas3]}
                             texto="Transportamos produtos químicos e perigosos com licenças específicas, equipe altamente capacitada e plano de contingência para emergências.Nosso trabalho é proporcionar aos clientes segurança e tranquilidade neste tipo de transporte tão peculiar e crítico na cadeia de fornecimento devido aos altos riscos envolvidos, os quais são trabalhados em todas as frentes e monitorados full time pela equipe Soma."
                         />
 
-                        <SlideServicos
+                        <ContainerServicos
                             titulo="LOCAÇÃO DE EQUIPAMENTOS"
                             imagens={[locacao1, locacao2, locacao3, locacao4, locacao5, locacao6]}
                             texto="Locamos caminhões, máquinas e equipamentos pesados que vão garantir à sua operação tecnologia de ponta, alta produtividade, ampla variedade de aplicação e excelente desempenho.Temos extenso portfólio de maquinário, incluindo carregadeiras, escavadeiras, motoniveladoras, rolos compactadores, tratores de esteira, caminhões-pipa e comboio, entre outros. São inúmeras as vantagens de se locar um equipamento, entre elas, economia com estoque, redução de tempo improdutivo, custo zero de manutenção, dedução de IR, entre outros."
