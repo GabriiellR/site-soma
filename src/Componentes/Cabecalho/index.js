@@ -1,18 +1,22 @@
 import logoMenu from '../../Imagens/Cabecalho/logo-menu.png'
 import { Link, useLocation } from 'react-router-dom';
+import { motion, useScroll } from "framer-motion";
+
 
 import './index.css'
 
 const Cabecalho = () => {
 
     const pagina = useLocation();
+    const { scrollYProgress } = useScroll();
+
 
     return <>
         <nav class="navbar navbar-expand-lg d-flex gap-3 p-4 sticky-top bg-light">
             <div class="container-fluid">
 
                 <img src={logoMenu} />
-                
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,6 +48,8 @@ const Cabecalho = () => {
                 </div>
             </div>
         </nav>
+
+        <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
     </>
 }
 

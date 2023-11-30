@@ -30,3 +30,15 @@ span {
   background: #f1ba1a;
   border-radius: 10px;
 }
+
+.progress-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 8px;
+  background: #f1ba1a;
+  border-radius: 60px;
+  transform-origin: 0%;
+  z-index: 9999;
+}

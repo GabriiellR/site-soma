@@ -18,7 +18,6 @@ const SobreNosIndex = () => {
     return <>
 
         <ParticlesSobreNos />
-
         <CardPrincipal titulo="SOBRE NÓS" componente={<SobreNos />} />
         <LinhaTempo />
         <CardPrincipal titulo="NOSSOS VALORES" componente={<Valores />} />
