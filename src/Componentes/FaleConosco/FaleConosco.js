@@ -1,40 +1,48 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { motion, useAnimation } from 'framer-motion';
 
 import './FaleConosco.css'
+import { useState } from 'react';
 
 const FaleConosco = () => {
 
-    const ControlaFaleConosco = () => {
 
-        var teste = document.getElementsByClassName('feedback_form_area');
+    const [aberto, setAberto] = useState(false);
+    const controls = useAnimation();
 
-        teste.styles = ''
+    const toggleFeedbackArea = () => {
+        setAberto(!aberto);
+        controls.start({ width: aberto ? 0 : '350px' });
+    };
 
-    }
 
+    return (
+        <>
+            <motion.div className="feedback-form"  
+                        animate={controls}
+                        initial={{ width: 0 }}
+                        transition={{duration: 0.5}}>
 
-    return <>
-        <div id="feedback-form" class="feedback-form" onClick={ControlaFaleConosco()}>
-            <a href="#" class="feedback-form-btn btn btn-lg botao-flutua">Fale conosco</a>
-            <div class="feedback_form_area">
-                <div class="feedback_form_area_inner">
-                    <h3 class="mb-3">Nossos contatos</h3>
-                    <p className='fs-4'>Atendimento geral<br /> <FontAwesomeIcon icon={faPhone} /> +55 (31) 3307-3000</p>
-                    <p className='fs-4'>Comercial <br /> <a href="https://wa.me/5531984119112"><FontAwesomeIcon icon={faWhatsapp} /> +55 (31) 98411-9112</a></p>
-                    <p className='fs-4'>Central de Cargas <br /> <FontAwesomeIcon icon={faPhone} /> +55 (31) 3307-3004</p>
-                    <p className='fs-4'>Agregados <br /> <a href="https://wa.me/5531984728073" ><FontAwesomeIcon icon={faWhatsapp} /> +55 (31) 98472-8073</a></p>
-                    <p className='fs-4'>Unidades <br /> <a href="https://wa.me/5531984119112"> <FontAwesomeIcon icon={faWhatsapp} /> +55 (31) 98411-9112</a></p>
-                    <p className='fs-4'>E-mail<br /> <FontAwesomeIcon icon={faEnvelope} /> contato@somalogistica.com.br</p>
+                <a href="#" className="feedback-form-btn btn btn-lg botao-flutua" onClick={toggleFeedbackArea}>
+                    Fale conosco
+                </a>
+
+                <div className="feedback_form_area_inner d-flex flex-column gap-2">
+                    <h3 class="fs-4">Nossos contatos</h3>
+                    <div className='fs-6'>Atendimento geral <div className='d-flex align-items-center gap-2'> <FontAwesomeIcon icon={faPhone} /> +55 (31) 3307-3000</div></div>
+                    <div className='fs-6'>Comercial  <div className='d-flex align-items-center gap-2'><a className='text-decoration-none text-white' href="https://wa.me/5531984119112"><FontAwesomeIcon icon={faWhatsapp} /> +55 (31) 98411-9112</a></div></div>
+                    <div className='fs-6'>Central de Cargas <div className='d-flex align-items-center gap-2'> <FontAwesomeIcon icon={faPhone} /> +55 (31) 3307-3004</div></div>
+                    <div className='fs-6'>Agregados <div className='d-flex align-items-center gap-2'><a className='text-decoration-none text-white' href="https://wa.me/5531984728073"><FontAwesomeIcon icon={faWhatsapp} /> +55 (31) 98472-8073</a></div></div>
+                    <div className='fs-6'>Unidades <div className='d-flex align-items-center gap-2'><a className='text-decoration-none text-white' href="https://wa.me/5531984119112"> <FontAwesomeIcon icon={faWhatsapp} /> +55 (31) 98411-9112</a></div></div>
+                    <div className='fs-6'>E-mail<div className='d-flex align-items-center gap-2'> <FontAwesomeIcon icon={faEnvelope} /> contato@somalogistica.com.br</div></div>
+
                 </div>
-            </div>
-        </div>
+            </motion.div>
 
-
-
-    </>
-
+        </>
+    );
 
 }
 export default FaleConosco;

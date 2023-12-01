@@ -17,10 +17,10 @@ const SobreNosIndex = () => {
 
     return <>
         <ParticlesSobreNos />
-        <CardPrincipal titulo="SOBRE NÓS" componente={<SobreNos />}  />
+        <CardPrincipal titulo="SOBRE NÓS" componente={<SobreNos />} />
         <LinhaTempo />
         <CardPrincipal titulo="NOSSOS VALORES" componente={<Valores />} />
-        <CardPrincipal titulo="CORPO DIRETIVO" componente={<CorpoDiretivo />} />
+        <CorpoDiretivo />
         <CardPrincipal componente={<Certificacao />} />
         <NossaGente />
         <Premios />

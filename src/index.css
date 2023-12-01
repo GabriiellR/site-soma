@@ -6,6 +6,10 @@
   color: #f1ba1a !important;
 }
 
+.bg-cinza {
+  background-color: #f6f6f6;
+}
+
 #particles {
   position: fixed !important;
   z-index: -500;
@@ -42,6 +46,14 @@ span {
   background-color: #fff !important;
 }
 
-.swiper-slide{
-  background-color:  transparent !important;
+.swiper-slide {
+  background-color: transparent !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.w-90 {
+  max-width: 90% !important;
 }

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faUserCheck, faEnvelope, faPenToSquare } from "@fortawesome/free-solid-svg-icons"
 import BotaoSimples from "../../Componentes/Botao/BotaoSimples";
 import ModalSimples from "../../Componentes/Modal/ModalSimples";
+import { Link } from 'react-router-dom';
 
 
 
@@ -38,7 +39,7 @@ const ConteudoCanalEtica = () => {
                     <span className="fs-4"><FontAwesomeIcon icon={faUserCheck} size="xl" /> Pessoalmente: procure pelo o responsável pela Ouvidoria.</span>
                     <span className="fs-4"><FontAwesomeIcon icon={faPhone} size="xl" /> Por telefone: +55 (31) 3307-3011</span>
                     <span className="fs-4"><FontAwesomeIcon icon={faEnvelope} size="xl" /> Por e-mail: ouvidoria@somalogistica.com.br</span>
-                    <span className="fs-4"><FontAwesomeIcon icon={faPenToSquare} size="xl" /> Pela central de denúncias, por meio do QRCode ou <BotaoSimples titulo="Acesse aqui" /></span>
+                    <span className="fs-4"><FontAwesomeIcon icon={faPenToSquare} size="xl" /> Pela central de denúncias, por meio do QRCode ou <Link  className='btn yellow-soma text-white' to="/formularioOuvidoria">Acesse aqui</Link></span>
                 </div>
 
             </div>

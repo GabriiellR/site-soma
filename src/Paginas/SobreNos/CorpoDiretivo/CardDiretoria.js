@@ -1,5 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import Collapse from '../../../Componentes/Collapse/Collapse';
 
 const CardDiretoria = (props) => {
 
@@ -10,9 +11,10 @@ const CardDiretoria = (props) => {
             <div className="d-flex w-100 justify-content-center">
                 <img src={props.imagem} alt="..." class="img-thumbnail rounded-circle" width="50%" />
             </div>
-            <div class="pt-2">
-                <h4 class="text-center mb-1 fw-bold">{props.nome}</h4>
-                <h5 class="text-center fw-normal">{props.cargo}</h5>
+            <div class="pt-2 d-flex  flex-column align-items-center">
+                <h5 class="text-center mb-1 fw-bold">{props.nome}</h5>
+                <span class="text-center fw-semibold fs-6">{props.cargo}</span>
+                <span className='fs-6'>{props.curriculo}</span>
             </div>
         </div>
 

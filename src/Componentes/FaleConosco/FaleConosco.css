@@ -3,29 +3,20 @@
     top: 20%;
     right: 0;
     z-index: 100;
-    min-height: 450px;
+    /* min-height: 450px; */
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .feedback-form-show {
     right: 0 !important;
 }
 
-.feedback_form_area {
-    position: relative;
-    display: none;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.8);
-}
 
 .feedback_form_area_inner {
     width: 310px;
-    min-height: 450px;
+    /* min-height: 450px; */
     color: #fff;
     padding: 30px;
-}
-
-.feedback_form_area h3 {
-    margin-top: 0;
 }
 
 .custom-inp {
@@ -74,3 +65,11 @@
     width: 165px;
     padding: 0px;
 }
+
+.botao-flutua:hover {
+    background-color: #F1BA1A;
+    color: #404041!important;
+    width: 165px;
+    padding: 0px;
+}
+

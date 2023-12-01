@@ -8,6 +8,7 @@ import Parceiros from './Paginas/Parceiros/Parceiros.js';
 import Servicos from './Paginas/Servicos/Servicos.js';
 import Contato from './Paginas/Contato/Contato.js';
 import CanalEtica from './Paginas/CanalEtica/CanalEtica.js';
+import FormularioOuvidoria from './Paginas/CanalEtica/FormularioOuvidoria.js';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/servicos" element={<Servicos />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/etica" element={<CanalEtica/>} />
+            <Route path="/formularioOuvidoria" element={<FormularioOuvidoria/>} />
 
           </Route>
 
@@ -33,6 +35,8 @@ function App() {
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/etica" element={<CanalEtica/>} />
+          <Route path="/formularioOuvidoria" element={<FormularioOuvidoria/>} />
+
           <Route path="*" element={<h1>404 - Página não encontrada</h1>} />
         </Routes>
       </AnimatePresence>

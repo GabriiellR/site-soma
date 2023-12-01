@@ -102,7 +102,6 @@ const Servicos = () => {
                             texto="A Soma presta serviços de terraplanagem visando a conformação de relevos para implantação de obras de engenharia, bem como serviços de infraestrutura de mina objetivando que operações produtivas performem ciclos seguros, controlados e previsíveis. Atuamos com serviços de base como abertura e adequações de depósitos, acessos e aterros, nivelamento de áreas, confecção de diques, limpeza de sump, manutenção de acessos, instalação e manutenção de drenagens, britagem, conformação de pilhas de estéril, retaludamentos, limpeza industrial, entre outros."
                         />} />
 
-
                         <CardPrincipal componente={<ContainerServicos
                             titulo="UMECTAÇÃO E MANUTENÇÃO DE VIAS"
                             imagens={[caminhoespipa1, caminhoespipa2, caminhoespipa3, caminhoespipa4, caminhoespipa5, caminhoespipa6, caminhoespipa7]}
@@ -118,7 +117,8 @@ const Servicos = () => {
                         <CardPrincipal componente={<ContainerServicos
                             titulo="TRANSPORTE DE QUÍMICOS E PERIGOSOS"
                             imagens={[cargasPerigosas1, cargasPerigosas2, cargasPerigosas3]}
-                            texto="Transportamos produtos químicos e perigosos com licenças específicas, equipe altamente capacitada e plano de contingência para emergências.Nosso trabalho é proporcionar aos clientes segurança e tranquilidade neste tipo de transporte tão peculiar e crítico na cadeia de fornecimento devido aos altos riscos envolvidos, os quais são trabalhados em todas as frentes e monitorados full time pela equipe Soma."
+                            texto="Transportamos produtos químicos e perigosos com licenças específicas, equipe altamente capacitada e plano de contingência para emergências.Nosso trabalho é proporcionar aos clientes segurança e tranquilidade neste tipo de transporte tão peculiar e crítico na cadeia de fornecimento devido 
+                             altos riscos envolvidos, os quais são trabalhados em todas as frentes e monitorados full time pela equipe Soma."
                         />} />
 
                         <CardPrincipal titulo={"LOCAÇÃO DE EQUIPAMENTOS"} componente={<ContainerServicos
@@ -126,9 +126,6 @@ const Servicos = () => {
                             imagens={[locacao1, locacao2, locacao3, locacao4, locacao5, locacao6]}
                             texto="Locamos caminhões, máquinas e equipamentos pesados que vão garantir à sua operação tecnologia de ponta, alta produtividade, ampla variedade de aplicação e excelente desempenho.Temos extenso portfólio de maquinário, incluindo carregadeiras, escavadeiras, motoniveladoras, rolos compactadores, tratores de esteira, caminhões-pipa e comboio, entre outros. São inúmeras as vantagens de se locar um equipamento, entre elas, economia com estoque, redução de tempo improdutivo, custo zero de manutenção, dedução de IR, entre outros."
                         />} />
-
-
-
 
                         <CardPrincipal titulo="NOSSOS DIFERENCIAIS" componente={<div className="d-flex justify-content-center" data-aos="fade-right" data-aos-duration="2000"><img src={diferenciais} className="img-fluid mt-5 " width="80%" /></div>} />
                     </div>
