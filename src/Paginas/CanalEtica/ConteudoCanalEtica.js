@@ -4,7 +4,6 @@ import codigoConduta from '../../Imagens/CanalEtica/codigoConduta.pdf'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faUserCheck, faEnvelope, faPenToSquare } from "@fortawesome/free-solid-svg-icons"
-import BotaoSimples from "../../Componentes/Botao/BotaoSimples";
 import ModalSimples from "../../Componentes/Modal/ModalSimples";
 import { Link } from 'react-router-dom';
 

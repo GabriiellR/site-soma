@@ -4,7 +4,7 @@ const Premios = () => {
 
     return <>
 
-    Teste premios
+    
 
     </>
 

@@ -13,6 +13,7 @@ const Slide = (props) => {
                     style={{ '--swiper-navigation-color': '#f1ba1a', '--swiper-pagination-color': '#f1ba1a' }}
                     navigation={true}
                     centeredSlides={true}
+                    // slidesPerView={props.slidersPerView}
                     modules={[Navigation, Autoplay, Pagination]}
                     autoplay={{ delay: 4000, disableOnInteraction: false }}
                     loop={true} autoHeight={true}>
