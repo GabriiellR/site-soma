@@ -22,7 +22,7 @@ const CardPrincipal = (props) => {
 
                 </div>
             </div>
-            <div className='row'>
+            <div className='row mt-5'>
                 <div className='cols-m-12 col-md-12 col-lg-12'>
                     {props.componente}
                 </div>

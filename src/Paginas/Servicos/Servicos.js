@@ -72,9 +72,7 @@ const Servicos = () => {
     return (
         <>
             <Particles />
-            <Slide conteudo={[<img src={imagemInicio1} className="img-fluid w-100" />,
-            <img src={imagemInicio2} className="img-fluid w-100" />,
-            <img src={imagemInicio3} className="img-fluid w-100" />]} />
+            <Slide slidersPerView={1} conteudo={[<img src={imagemInicio1} className="img-fluid w-100" />, <img src={imagemInicio2} className="img-fluid w-100" />, <img src={imagemInicio3} className="img-fluid w-100" />]} />
 
             <div className="container">
                 <div className="row gy-2">

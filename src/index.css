@@ -61,3 +61,7 @@ span {
 .min-h-90 {
   min-height: 90vh;
 }
+
+.w-30 {
+  width: 30% !important;
+}
