@@ -3,8 +3,11 @@ import Transicao from '../../Componentes/Transicoes/Transicao';
 import { useEffect, useState } from 'react';
 import { MostrarToastErro } from '../../Componentes/SweetAlert/SweetAlert';
 import { PegarToken } from './Token';
+import { ExibirPreLoader, RemoverPreLoader } from '../../Componentes/Preloader/Preloader';
 
 const PortalAgregados = () => {
+
+
 
     const urlBaseApi = "https://bennerhom.somalogistica.com.br/LogisticaWebHomologacao";
     const idPagamentoEletronico = new URLSearchParams(window.location.search).get("id");
@@ -27,10 +30,17 @@ const PortalAgregados = () => {
         }).catch((error) => {
             var mensagem = `${error.code} - Erro ao buscar informações`;
             MostrarToastErro(mensagem);
+            RemoverPreLoader();
             return;
         });
-        
+
     }, []);
+
+    ExibirPreLoader();
+
+    if (informacoesPortal) {
+        RemoverPreLoader();
+    }
 
     return <>
         <div class="container-fluid min-h-90">
