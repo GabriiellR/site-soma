@@ -21,7 +21,7 @@ const ConteudoCanalEtica = () => {
 
         <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12 text-center">
-                <ModalSimples tituloBotaoRodape="Fechar" tituloBotao="Ver Código de Conduta" titu tituloModal={"CÓDIGO DE CONDUTA"} conteudo={<iframe src={codigoConduta} width="100%" height="700" allowFullScreen={true}></iframe>} />
+                <ModalSimples tituloBotao="Ver Código de Conduta"  tituloModal={"CÓDIGO DE CONDUTA"} conteudo={<iframe src={`${codigoConduta}#toolbar=0`} width="100%" height="700" allowFullScreen={true}></iframe>} />
             </div>
         </div>
 
